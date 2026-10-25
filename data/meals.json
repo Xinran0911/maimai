@@ -1,0 +1,754 @@
+{
+ "storeCode": "1450127",
+ "storeName": "麦当劳上海陆家嘴明珠环餐厅",
+ "items": [
+  {
+   "name": "“我就喜欢”鸡薯双全盒",
+   "code": "9900016076",
+   "currentPrice": 31.0,
+   "originalPrice": 31.0,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900016076_320.png",
+   "category": "人气热卖",
+   "tags": [
+    "上新",
+    "心形薯饼同款比心"
+   ],
+   "kind": "share",
+   "taste": [
+    "顶饱"
+   ],
+   "hot": true,
+   "new": true
+  },
+  {
+   "name": "龙焰芝士棒鸡腿堡三件套",
+   "code": "9900016075",
+   "currentPrice": 56.0,
+   "originalPrice": 56.0,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900016075_320.png",
+   "category": "人气热卖",
+   "tags": [
+    "上新",
+    "浓郁奶香拉丝芝士"
+   ],
+   "kind": "combo",
+   "taste": [
+    "顶饱"
+   ],
+   "hot": true,
+   "new": true
+  },
+  {
+   "name": "龙焰鸡腿堡三件套",
+   "code": "9900016073",
+   "currentPrice": 53.0,
+   "originalPrice": 53.0,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900016073_320.png",
+   "category": "人气热卖",
+   "tags": [
+    "上新",
+    "韩式辣椒黄油风味"
+   ],
+   "kind": "combo",
+   "taste": [
+    "顶饱",
+    "提神"
+   ],
+   "hot": true,
+   "new": true
+  },
+  {
+   "name": "蘸酱炸鸡",
+   "code": "9900016077",
+   "currentPrice": 19.0,
+   "originalPrice": 19.0,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900016077_320.gif",
+   "category": "人气热卖",
+   "tags": [
+    "韩式芝士风味酱上新"
+   ],
+   "kind": "side",
+   "taste": [
+    "提神"
+   ],
+   "hot": true,
+   "new": false
+  },
+  {
+   "name": "龙焰鸡腿堡",
+   "code": "521952",
+   "currentPrice": 27.5,
+   "originalPrice": 27.5,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_521952_320.png",
+   "category": "人气热卖",
+   "tags": [
+    "上新",
+    "韩式辣椒黄油风味"
+   ],
+   "kind": "main",
+   "taste": [
+    "顶饱",
+    "提神"
+   ],
+   "hot": true,
+   "new": true
+  },
+  {
+   "name": "心形薯饼8块",
+   "code": "9900016566",
+   "currentPrice": 24.0,
+   "originalPrice": 24.0,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900016566_320.png",
+   "category": "人气热卖",
+   "tags": [
+    "上新",
+    "含一份蘸酱"
+   ],
+   "kind": "side",
+   "taste": [],
+   "hot": true,
+   "new": true
+  },
+  {
+   "name": "蓝莓爆爆珠麦旋风",
+   "code": "521950",
+   "currentPrice": 17.5,
+   "originalPrice": 17.5,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_521950_320.png",
+   "category": "人气热卖",
+   "tags": [
+    "上新",
+    "蓝莓"
+   ],
+   "kind": "dessert",
+   "taste": [],
+   "hot": true,
+   "new": true
+  },
+  {
+   "name": "麦当劳奶昔",
+   "code": "9900014092",
+   "currentPrice": 15.0,
+   "originalPrice": 22.0,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900014092_320.gif",
+   "category": "人气热卖",
+   "tags": [
+    "上新",
+    "奶昔回归"
+   ],
+   "kind": "drink",
+   "taste": [],
+   "hot": true,
+   "new": true
+  },
+  {
+   "name": "浓浓黑巧（冰/热）",
+   "code": "515946",
+   "currentPrice": 25.0,
+   "originalPrice": 25.0,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/20261008/product/MS_G515945_320.gif",
+   "category": "人气热卖",
+   "tags": [
+    "浓浓黑巧",
+    "限定特惠"
+   ],
+   "kind": "drink",
+   "taste": [
+    "提神"
+   ],
+   "hot": true,
+   "new": false
+  },
+  {
+   "name": "麦咖啡™奶铁",
+   "code": "507409",
+   "currentPrice": 9.9,
+   "originalPrice": 25.0,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/20260422/product/MS_G507372_320.gif",
+   "category": "人气热卖",
+   "tags": [
+    "限定特惠"
+   ],
+   "kind": "drink",
+   "taste": [
+    "提神",
+    "省钱"
+   ],
+   "hot": true,
+   "new": false
+  },
+  {
+   "name": "龙焰芝士棒鸡腿堡",
+   "code": "521953",
+   "currentPrice": 30.5,
+   "originalPrice": 30.5,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_521953_320.png",
+   "category": "鸡肉汉堡/卷",
+   "tags": [
+    "上新",
+    "浓郁奶香拉丝芝士"
+   ],
+   "kind": "main",
+   "taste": [
+    "顶饱"
+   ],
+   "hot": false,
+   "new": true
+  },
+  {
+   "name": "咸蛋黄鸡腿蛋月堡三件套",
+   "code": "9900015850",
+   "currentPrice": 54.5,
+   "originalPrice": 54.5,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900015850_320.png",
+   "category": "鸡肉汉堡/卷",
+   "tags": [
+    "上新",
+    "滑嫩蒸蛋",
+    "酥脆鸡腿排"
+   ],
+   "kind": "combo",
+   "taste": [
+    "顶饱"
+   ],
+   "hot": false,
+   "new": true
+  },
+  {
+   "name": "咸蛋黄鸡腿蛋月堡",
+   "code": "521900",
+   "currentPrice": 28.5,
+   "originalPrice": 28.5,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_521900_320.png",
+   "category": "鸡肉汉堡/卷",
+   "tags": [
+    "上新",
+    "滑嫩蒸蛋",
+    "酥脆鸡腿排"
+   ],
+   "kind": "main",
+   "taste": [
+    "顶饱"
+   ],
+   "hot": false,
+   "new": true
+  },
+  {
+   "name": "板烧鸡腿堡三件套",
+   "code": "9900005462",
+   "currentPrice": 52.5,
+   "originalPrice": 52.5,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/20260824/product/MS_9900005462_320.png",
+   "category": "鸡肉汉堡/卷",
+   "tags": [
+    "套餐",
+    "新升级",
+    "更多汁"
+   ],
+   "kind": "combo",
+   "taste": [
+    "清淡"
+   ],
+   "hot": false,
+   "new": false
+  },
+  {
+   "name": "麦辣鸡腿汉堡",
+   "code": "1440",
+   "currentPrice": 26.0,
+   "originalPrice": 26.0,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/20260325/product/MS_1440_320.png",
+   "category": "鸡肉汉堡/卷",
+   "tags": [
+    "人气经典",
+    "单品",
+    "外酥里嫩"
+   ],
+   "kind": "main",
+   "taste": [
+    "提神"
+   ],
+   "hot": true,
+   "new": false
+  },
+  {
+   "name": "板烧鸡腿堡",
+   "code": "1406",
+   "currentPrice": 27.0,
+   "originalPrice": 27.0,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/20241008/product/MS_1406_320.png",
+   "category": "鸡肉汉堡/卷",
+   "tags": [
+    "单品",
+    "多汁惹味",
+    "板烧滋滋"
+   ],
+   "kind": "main",
+   "taste": [
+    "清淡"
+   ],
+   "hot": false,
+   "new": false
+  },
+  {
+   "name": "麦香鸡",
+   "code": "1450",
+   "currentPrice": 19.5,
+   "originalPrice": 19.5,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_1450_320.png",
+   "category": "鸡肉汉堡/卷",
+   "tags": [
+    "单品"
+   ],
+   "kind": "main",
+   "taste": [
+    "省钱"
+   ],
+   "hot": false,
+   "new": false
+  },
+  {
+   "name": "薄皮V翅双拼十翅",
+   "code": "9900006332",
+   "currentPrice": 61.0,
+   "originalPrice": 61.0,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/20260610/product/MS_9900006332_320.png",
+   "category": "小食拼盘/多人餐",
+   "tags": [
+    "小食拼盘",
+    "超值"
+   ],
+   "kind": "share",
+   "taste": [
+    "顶饱"
+   ],
+   "hot": false,
+   "new": false
+  },
+  {
+   "name": "BFF四宫格小食盘",
+   "code": "9900015730",
+   "currentPrice": 59.5,
+   "originalPrice": 59.5,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900015730_320.gif",
+   "category": "小食拼盘/多人餐",
+   "tags": [
+    "小食拼盘",
+    "随心拼"
+   ],
+   "kind": "share",
+   "taste": [
+    "顶饱"
+   ],
+   "hot": false,
+   "new": false
+  },
+  {
+   "name": "三文鱼双虾至尊月堡三件套",
+   "code": "9900015851",
+   "currentPrice": 59.5,
+   "originalPrice": 59.5,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900015851_320.png",
+   "category": "巨无霸牛鱼肉堡",
+   "tags": [
+    "上新",
+    "整颗虾仁",
+    "精选三文鱼"
+   ],
+   "kind": "combo",
+   "taste": [
+    "清淡"
+   ],
+   "hot": false,
+   "new": true
+  },
+  {
+   "name": "三文鱼双虾至尊月堡",
+   "code": "521903",
+   "currentPrice": 33.5,
+   "originalPrice": 33.5,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_521903_320.png",
+   "category": "巨无霸牛鱼肉堡",
+   "tags": [
+    "上新",
+    "整颗虾仁",
+    "精选三文鱼"
+   ],
+   "kind": "main",
+   "taste": [
+    "清淡"
+   ],
+   "hot": false,
+   "new": true
+  },
+  {
+   "name": "巨无霸三件套",
+   "code": "9900005466",
+   "currentPrice": 54.5,
+   "originalPrice": 54.5,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/20260824/product/MS_9900005466_320.png",
+   "category": "巨无霸牛鱼肉堡",
+   "tags": [
+    "100%纯牛肉",
+    "套餐"
+   ],
+   "kind": "combo",
+   "taste": [
+    "顶饱"
+   ],
+   "hot": false,
+   "new": false
+  },
+  {
+   "name": "巨无霸",
+   "code": "1100",
+   "currentPrice": 29.0,
+   "originalPrice": 29.0,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/20260309/product/MS_1100_320.png",
+   "category": "巨无霸牛鱼肉堡",
+   "tags": [
+    "100%纯牛肉",
+    "单品"
+   ],
+   "kind": "main",
+   "taste": [
+    "顶饱"
+   ],
+   "hot": false,
+   "new": false
+  },
+  {
+   "name": "麦香鱼",
+   "code": "1600",
+   "currentPrice": 25.0,
+   "originalPrice": 25.0,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/20260101/product/MS_1600_320.png",
+   "category": "巨无霸牛鱼肉堡",
+   "tags": [
+    "单品",
+    "麦香鱼系列"
+   ],
+   "kind": "main",
+   "taste": [
+    "清淡"
+   ],
+   "hot": false,
+   "new": false
+  },
+  {
+   "name": "牛肉堡单品精选",
+   "code": "9900008747",
+   "currentPrice": 15.5,
+   "originalPrice": 15.5,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/20260309/product/MS_9900008747_320.gif",
+   "category": "巨无霸牛鱼肉堡",
+   "tags": [
+    "100%纯牛肉",
+    "单品"
+   ],
+   "kind": "main",
+   "taste": [
+    "省钱"
+   ],
+   "hot": false,
+   "new": false
+  },
+  {
+   "name": "芝士安格斯厚牛堡",
+   "code": "511782",
+   "currentPrice": 35.5,
+   "originalPrice": 35.5,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/20260309/product/MS_511782_320.png",
+   "category": "安格斯MAX厚牛堡",
+   "tags": [
+    "100%安格斯牛肉",
+    "单品"
+   ],
+   "kind": "main",
+   "taste": [
+    "顶饱"
+   ],
+   "hot": false,
+   "new": false
+  },
+  {
+   "name": "麦乐鸡",
+   "code": "1401",
+   "currentPrice": 15.5,
+   "originalPrice": 15.5,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/20260529/product/MS_G1401_320.png",
+   "category": "炸鸡",
+   "tags": [
+    "单品",
+    "喜欢您来玩",
+    "金黄酥脆"
+   ],
+   "kind": "side",
+   "taste": [
+    "省钱"
+   ],
+   "hot": false,
+   "new": false
+  },
+  {
+   "name": "马苏里拉拉丝芝士条",
+   "code": "521986",
+   "currentPrice": 16.0,
+   "originalPrice": 16.0,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_G521986_320.png",
+   "category": "小食甜品/其他",
+   "tags": [
+    "上新",
+    "奶香醇厚",
+    "趁热拉丝"
+   ],
+   "kind": "side",
+   "taste": [],
+   "hot": false,
+   "new": true
+  },
+  {
+   "name": "心形薯饼5块",
+   "code": "9900016082",
+   "currentPrice": 15.5,
+   "originalPrice": 15.5,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900016082_320.png",
+   "category": "小食甜品/其他",
+   "tags": [
+    "上新",
+    "口口酥脆",
+    "含一份蘸酱"
+   ],
+   "kind": "side",
+   "taste": [
+    "省钱"
+   ],
+   "hot": false,
+   "new": true
+  },
+  {
+   "name": "泷愿成真麦旋风——大米风味",
+   "code": "521917",
+   "currentPrice": 17.5,
+   "originalPrice": 17.5,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_521917_320.png",
+   "category": "小食甜品/其他",
+   "tags": [
+    "上新",
+    "快乐旋开吃"
+   ],
+   "kind": "dessert",
+   "taste": [],
+   "hot": false,
+   "new": true
+  },
+  {
+   "name": "薯条",
+   "code": "4810",
+   "currentPrice": 14.5,
+   "originalPrice": 14.5,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/20250523/product/MS_G4810_320_1747877491921.png",
+   "category": "小食甜品/其他",
+   "tags": [
+    "小食"
+   ],
+   "kind": "side",
+   "taste": [
+    "省钱"
+   ],
+   "hot": false,
+   "new": false
+  },
+  {
+   "name": "玉米杯",
+   "code": "4437",
+   "currentPrice": 14.5,
+   "originalPrice": 14.5,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_G4437_320.png",
+   "category": "小食甜品/其他",
+   "tags": [
+    "小食"
+   ],
+   "kind": "side",
+   "taste": [
+    "清淡"
+   ],
+   "hot": false,
+   "new": false
+  },
+  {
+   "name": "苹果片",
+   "code": "6102",
+   "currentPrice": 7.5,
+   "originalPrice": 7.5,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_6102_320.png",
+   "category": "小食甜品/其他",
+   "tags": [
+    "小食"
+   ],
+   "kind": "side",
+   "taste": [
+    "清淡",
+    "省钱"
+   ],
+   "hot": false,
+   "new": false
+  },
+  {
+   "name": "派",
+   "code": "9900008752",
+   "currentPrice": 9.5,
+   "originalPrice": 9.5,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_G9900008752_320.gif",
+   "category": "小食甜品/其他",
+   "tags": [
+    "派",
+    "第二份优惠"
+   ],
+   "kind": "dessert",
+   "taste": [
+    "省钱"
+   ],
+   "hot": false,
+   "new": false
+  },
+  {
+   "name": "麦咖啡™美式",
+   "code": "507411",
+   "currentPrice": 11.9,
+   "originalPrice": 23.0,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/20260422/product/MS_G507374_320.gif",
+   "category": "麦咖啡™",
+   "tags": [
+    "限定特惠"
+   ],
+   "kind": "drink",
+   "taste": [
+    "提神",
+    "省钱"
+   ],
+   "hot": false,
+   "new": false
+  },
+  {
+   "name": "“苹”水相“鱼”套餐",
+   "code": "9900011121",
+   "currentPrice": 55.5,
+   "originalPrice": 55.5,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900011121_320.png",
+   "category": "500大卡套餐",
+   "tags": [
+    "粉丝之选"
+   ],
+   "kind": "combo",
+   "taste": [
+    "清淡"
+   ],
+   "hot": false,
+   "new": false
+  },
+  {
+   "name": "牛气满满套餐",
+   "code": "9900009245",
+   "currentPrice": 52.0,
+   "originalPrice": 52.0,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900009245_320.png",
+   "category": "500大卡套餐",
+   "tags": [],
+   "kind": "combo",
+   "taste": [
+    "清淡"
+   ],
+   "hot": false,
+   "new": false
+  },
+  {
+   "name": "【美汁源】“多汁柠柠”",
+   "code": "521817",
+   "currentPrice": 13.5,
+   "originalPrice": 13.5,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/20260807/product/MS_521817_320.png",
+   "category": "饮品",
+   "tags": [
+    "上新",
+    "清爽上新"
+   ],
+   "kind": "drink",
+   "taste": [
+    "清淡"
+   ],
+   "hot": false,
+   "new": true
+  },
+  {
+   "name": "可乐",
+   "code": "9900008751",
+   "currentPrice": 11.0,
+   "originalPrice": 11.0,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900008751_320.gif",
+   "category": "饮品",
+   "tags": [
+    "冷饮"
+   ],
+   "kind": "drink",
+   "taste": [
+    "省钱"
+   ],
+   "hot": false,
+   "new": false
+  },
+  {
+   "name": "阳光柠檬红茶",
+   "code": "515280",
+   "currentPrice": 11.0,
+   "originalPrice": 11.0,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_G515280_320.png",
+   "category": "饮品",
+   "tags": [
+    "冷饮"
+   ],
+   "kind": "drink",
+   "taste": [
+    "清淡",
+    "省钱"
+   ],
+   "hot": false,
+   "new": false
+  },
+  {
+   "name": "纯悦",
+   "code": "3757",
+   "currentPrice": 9.0,
+   "originalPrice": 9.0,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/20240904/product/MS_3757_320.png",
+   "category": "饮品",
+   "tags": [
+    "冷饮"
+   ],
+   "kind": "drink",
+   "taste": [
+    "清淡",
+    "省钱"
+   ],
+   "hot": false,
+   "new": false
+  },
+  {
+   "name": "锡兰红茶",
+   "code": "3505",
+   "currentPrice": 12.5,
+   "originalPrice": 12.5,
+   "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_3505_320.png",
+   "category": "饮品",
+   "tags": [
+    "热饮"
+   ],
+   "kind": "drink",
+   "taste": [
+    "清淡"
+   ],
+   "hot": false,
+   "new": false
+  }
+ ]
+}

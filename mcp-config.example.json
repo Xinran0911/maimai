@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "mcd-mcp": {
+      "url": "https://mcp.mcd.cn",
+      "transport": "streamable-http",
+      "headers": {
+        "Authorization": "Bearer ${MCD_MCP_TOKEN}"
+      }
+    }
+  },
+  "llm": {
+    "provider": "deepseek",
+    "apiUrl": "https://api.deepseek.com/chat/completions",
+    "model": "deepseek-chat",
+    "apiKey": "${DEEPSEEK_API_KEY}"
+  }
+}

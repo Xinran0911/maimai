@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#FBF6EC">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="icon" href="data:,">
+<title>麦麦帮你点 · 今天吃点啥</title>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="frame" class="frame">
+  <main id="phone" class="phone" aria-label="麦麦帮你点 首页">
+
+    <!-- 桌面预览才显示的假状态栏（真机上由系统状态栏代替） -->
+    <div class="sb" aria-hidden="true">
+      <span id="clock">9:41</span>
+      <span class="sb-r">
+        <svg width="18" height="12" viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5" width="3" height="7" rx="1"/><rect x="10" y="2.5" width="3" height="9.5" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg>
+        <svg width="26" height="12" viewBox="0 0 26 12"><rect x=".5" y=".5" width="22" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="19" height="8" rx="2"/><rect x="24" y="4" width="2" height="4" rx="1" opacity=".45"/></svg>
+      </span>
+    </div>
+
+    <!-- 顶部：头像位（assets/avatar.jpg，可在 config.js 换）｜居中「麦麦帮你点」｜购物车角标；下方门店胶囊 -->
+    <header class="top">
+      <div class="brand">
+        <div id="avatarSlot" class="avatar-slot" aria-hidden="true"></div>
+        <div class="bubble">
+          <h1 class="brand-name">麦麦帮你点</h1>
+          <div class="brand-sub">McDonald's · 今天吃点啥</div>
+        </div>
+      </div>
+      <button id="cartBtn" class="cartb" type="button" aria-label="购物车">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2B1B12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2.5l2.2 10.2a1.5 1.5 0 0 0 1.5 1.2h8.1a1.5 1.5 0 0 0 1.5-1.1L20.5 8H6.2"/><circle cx="9.5" cy="19.5" r="1.4" fill="#2B1B12" stroke="none"/><circle cx="17" cy="19.5" r="1.4" fill="#2B1B12" stroke="none"/></svg>
+        <i id="cartCount" class="cart-count" hidden>0</i>
+      </button>
+    </header>
+    <div class="store-row">
+      <button id="storeBtn" class="store" type="button">
+        <svg width="12" height="14" viewBox="0 0 12 14"><path d="M6 0C2.9 0 .5 2.3.5 5.3c0 3.7 4.4 8 5.1 8.6.2.2.6.2.8 0 .7-.6 5.1-4.9 5.1-8.6C11.5 2.3 9.1 0 6 0Z" fill="#DA291C"/><circle cx="6" cy="5.2" r="2" fill="#fff"/></svg>
+        <span id="storeName">陆家嘴明珠环</span>
+        <svg width="7" height="10" viewBox="0 0 7 10" fill="none" stroke="#9A8670" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5 5 5l-3.5 3.5"/></svg>
+      </button>
+    </div>
+
+    <!-- 三张重叠「抽卡」：卡片由 js/deck.js 渲染 -->
+    <section id="deck" class="deck" aria-label="菜品卡片"></section>
+
+    <div class="dots-row">
+      <div id="dots" class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      <button id="undoBtn" class="undo" type="button" aria-label="回到上一张" disabled>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></svg>
+      </button>
+    </div>
+
+    <!-- 语音按钮：按住说话 -->
+    <button id="voiceBtn" class="voice" type="button" aria-label="按住说话，帮我点餐、配餐">
+      <span class="mic"><svg viewBox="0 0 24 24" fill="#FFC72C"><rect x="8" y="2" width="8" height="13" rx="4"/><path d="M5 11a7 7 0 0014 0" stroke="#FFC72C" stroke-width="2" fill="none"/><rect x="11" y="18" width="2" height="4"/></svg></span>
+      <span class="vt"><b>按住说，帮我点</b><small>比如：今天健身了，来点高蛋白的</small></span>
+      <span class="vr" aria-hidden="true">⌃</span>
+    </button>
+
+    <!-- 语音按住浮层（微信式：收音气泡 + 上滑取消） -->
+    <div id="voiceLayer" class="vlayer" aria-hidden="true">
+      <div class="ov"></div>
+      <div id="vTimer" class="rel v-timer">麦麦正在听… 0:00</div>
+      <div id="vBub" class="bub">
+        <div id="vWave" class="wave"></div>
+        <div id="vTr" class="tr">说吧，我在听</div>
+        <div id="vTr2" class="tr2">比如：今天健身了，来点高蛋白的</div>
+      </div>
+      <div id="vX" class="xbtn">✕</div>
+      <div id="vXLabel" class="rel v-xlabel">↑ 上滑取消</div>
+      <div id="vHold" class="hold"></div>
+      <div id="vSend" class="rel v-send"><b>松开发送</b><small>松开，麦麦帮你配餐</small></div>
+      <div id="vBack" class="rel v-back">下滑回去继续说</div>
+    </div>
+
+    <!-- 对话页：松手后进入（js/chat.js 渲染消息与餐卡） -->
+    <section id="chat" class="chat" aria-label="麦麦帮你点 对话" aria-hidden="true">
+      <header class="ctop">
+        <button id="chatBack" class="cback" type="button" aria-label="返回首页">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2B1B12" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5 8 12l7 7"/></svg>
+        </button>
+        <div class="cbrand"><div class="avatar-slot" aria-hidden="true"></div><div class="bubble"><h2 class="brand-name">麦麦帮你点</h2></div></div>
+        <button id="chatCartBtn" class="cartb" type="button" aria-label="购物车">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2B1B12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2.5l2.2 10.2a1.5 1.5 0 0 0 1.5 1.2h8.1a1.5 1.5 0 0 0 1.5-1.1L20.5 8H6.2"/><circle cx="9.5" cy="19.5" r="1.4" fill="#2B1B12" stroke="none"/><circle cx="17" cy="19.5" r="1.4" fill="#2B1B12" stroke="none"/></svg>
+          <i id="chatCartCount" class="cart-count" hidden>0</i>
+        </button>
+      </header>
+      <div id="chatScroll" class="cscroll"><div id="chatList" class="clist"></div></div>
+      <footer class="cbar">
+        <button id="kbBtn" class="kbb" type="button" aria-label="切换为键盘输入">
+          <svg class="ic-kb" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2B1B12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="19" height="12" rx="2.6"/><path d="M6.5 10h.01M10 10h.01M14 10h.01M17.5 10h.01M7 14h10"/></svg>
+          <svg class="ic-mic" width="22" height="22" viewBox="0 0 24 24" fill="#2B1B12"><rect x="8" y="2" width="8" height="13" rx="4"/><path d="M5 11a7 7 0 0014 0" stroke="#2B1B12" stroke-width="2" fill="none"/><rect x="11" y="18" width="2" height="4"/></svg>
+        </button>
+        <button id="chatVoiceBtn" class="voice cvoice" type="button" aria-label="按住说话">
+          <span class="mic"><svg viewBox="0 0 24 24" fill="#FFC72C"><rect x="8" y="2" width="8" height="13" rx="4"/><path d="M5 11a7 7 0 0014 0" stroke="#FFC72C" stroke-width="2" fill="none"/><rect x="11" y="18" width="2" height="4"/></svg></span>
+          <span class="vt"><b>按住说话</b><small id="chatVoiceHint">比如：今天健身了，来点高蛋白的</small></span>
+        </button>
+        <form id="typeForm" class="tform" autocomplete="off">
+          <input id="typeInput" type="text" maxlength="60" placeholder="打字输入，比如：昨天吃得油腻，想清淡点" enterkeyhint="send" aria-label="打字输入">
+          <button id="typeSend" type="submit" aria-label="发送">发送</button>
+        </form>
+      </footer>
+    </section>
+
+
+    <!-- 步骤 3：购物车 / 结算 / 支付成功（js/shop.js 渲染；头像 + 气泡标题与首页、对话页一致） -->
+    <section id="cartPage" class="page" aria-label="购物车" aria-hidden="true">
+      <header class="ctop pg-top">
+        <button class="cback" type="button" data-act="back" aria-label="返回"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2B1B12" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5 8 12l7 7"/></svg></button>
+        <div class="cbrand"><div class="avatar-slot" aria-hidden="true"></div><div class="bubble"><h2 class="pg-title" id="cartTitle">购物车</h2></div></div>
+        <span class="pg-spacer"></span>
+      </header>
+      <div class="pg-scroll"><div id="cartBody" class="pg-body"></div></div>
+      <footer id="cartBar" class="cartbar"></footer>
+    </section>
+    <section id="coPage" class="page" aria-label="确认订单" aria-hidden="true">
+      <header class="ctop pg-top">
+        <button class="cback" type="button" data-act="back" aria-label="返回"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2B1B12" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5 8 12l7 7"/></svg></button>
+        <div class="cbrand"><div class="avatar-slot" aria-hidden="true"></div><div class="bubble"><h2 class="pg-title" id="coTitle">确认订单</h2></div></div>
+        <span class="pg-spacer"></span>
+      </header>
+      <div class="pg-scroll"><div id="coBody" class="pg-body"></div></div>
+      <footer id="coBar" class="cartbar"></footer>
+    </section>
+    <section id="okPage" class="page okpage" aria-label="支付成功" aria-hidden="true">
+      <header class="ctop pg-top">
+        <button class="cback" type="button" data-act="back" aria-label="返回"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2B1B12" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5 8 12l7 7"/></svg></button>
+        <div class="cbrand"><div class="avatar-slot" aria-hidden="true"></div><div class="bubble"><h2 class="pg-title" id="okTitle">支付成功</h2></div></div>
+        <span class="pg-spacer"></span>
+      </header>
+      <div class="pg-scroll"><div id="okBody" class="pg-body"></div></div>
+      <footer id="okBar" class="cartbar okbar"></footer>
+    </section>
+    <div id="payOv" class="payov" aria-hidden="true"><div class="paybox"><div class="spin"></div><b>支付中…</b><small>演示支付，不会真实扣款</small></div></div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </main>
+</div>
+
+<!-- 纯静态，按顺序加载：配置 → 真实数据 → 推荐算法 → 模块 -->
+<script src="js/config.js"></script>
+<script src="data/meals.js"></script>
+<script src="js/recommend.js"></script>
+<script src="js/data.js"></script>
+<script src="data/prices.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/deck.js"></script>
+<script src="js/sets.js"></script>
+<script src="js/intent.js"></script>
+<script src="js/speech.js"></script>
+<script src="js/stack.js"></script>
+<script src="js/agent.js"></script>
+<script src="js/chat.js"></script>
+<script src="js/pricing.js"></script>
+<script src="js/shop.js"></script>
+<script src="js/voice.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
