@@ -61,9 +61,7 @@
 
 ### 现在的 Demo 截图
 
-| 首页 | 说一句话，出餐卡 | 说「换成可乐」 |
-|---|---|---|
-| <img src="docs/demo/01-home.png" width="220"> | <img src="docs/demo/02-recommend.png" width="220"> | <img src="docs/demo/03-voice-edit.png" width="220"> |
+<img src="docs/demo/demo-overview.png" width="760" alt="首页、说一句话出餐卡、说换成可乐改单">
 
 > 设计稿是交互稿 v1，做 Demo 时我又调整了几处（例如首页改成新品、爆款两条浏览顺序，餐卡底部改成「购物车图标 + 就这个吧！」两个按钮）。
 
